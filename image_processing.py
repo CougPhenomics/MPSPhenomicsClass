@@ -15,9 +15,10 @@ Fm_id = '0007'
 FsLss_id = '0084'
 FmpLss_id = '0085'
 
+
 # %% functions
 def get_filenames(pn, grp):
-    fns = os.listdir(os.path.join(pn,grp))
+    fns = os.listdir(os.path.join(pn, grp))
     fn = fns[2]
     for fn in fns:
         f = re.split('[_]', os.path.splitext(os.path.basename(fn))[0])
